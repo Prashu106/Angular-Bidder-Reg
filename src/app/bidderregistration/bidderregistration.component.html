@@ -1,0 +1,61 @@
+<div>
+    <form #myForm="ngForm" (ngSubmit)="saveData()">
+
+        <table>
+                <tr>
+                    <td><label for="Farmer_id">Farmer_id</label> </td>   
+                    <td><input  type="text" name="Farmer_id" [(ngModel)]="bidder.Farmer_id" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="Farmer_name">Farmer_name</label> </td>   
+                    <td><input  type="text" name="Farmer_name" [(ngModel)]="bidder.Farmer_name" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="email_id">email_id</label> </td>   
+                    <td><input  type="text" name="email_id" [(ngModel)]="bidder.email_id" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="number">number</label> </td>   
+                    <td><input  type="text" name="number" [(ngModel)]="bidder.number" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="account_no">account_no</label> </td>   
+                    <td><input  type="text" name="account_no" [(ngModel)]="bidder.account_no" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="IFSC_code">IFSC_code</label> </td>   
+                    <td><input  type="text" name="IFSC_code" [(ngModel)]="bidder.IFSC_code" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="Aadhar_no">Aadhar_no</label> </td>   
+                    <td><input  type="text" name="Aadhar_no" [(ngModel)]="bidder.Aadhar_no" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="pan_no">pan_no</label> </td>   
+                    <td><input  type="text" name="pan_no" [(ngModel)]="bidder.pan_no" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="certificate_no">certificate_no</label> </td>   
+                    <td><input  type="text" name="certificate_no" [(ngModel)]="bidder.certificate_no" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="pass">pass</label> </td>   
+                    <td><input  type="text" name="pass" [(ngModel)]="bidder.pass" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="land_id">land_id</label> </td>   
+                    <td><input  type="text" name="land_id" [(ngModel)]="bidder.land_id" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="Location_id">Location_id</label> </td>   
+                    <td><input  type="text" name="Location_id" [(ngModel)]="bidder.Location_id" required></td>       
+                </tr>
+                <tr>
+                    <td></td>   
+                    <td><input type="submit" value="Save Product" [disabled]="!myForm.valid"></td>       
+                </tr>
+        </table>
+
+    </form>
+
+</div>
