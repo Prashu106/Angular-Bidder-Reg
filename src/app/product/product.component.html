@@ -1,0 +1,38 @@
+<form #myForm="ngForm" (ngSubmit)="saveData()">
+
+    <table >
+            <tr>
+                <td><label for="product_id">Product_id</label> </td>   
+                <td><input  type="number" name="product_id" [(ngModel)]="addproduct.product_id" required></td>       
+            </tr>
+            <tr>
+                <td><label for="product_name">crop_name</label> </td>   
+                <td><input  type="text" name="crop_name" [(ngModel)]="addproduct.crop_name" required></td>       
+            </tr>
+             <tr>
+                <td><label for="product_type">crop_type</label> </td>   
+                <td><input  type="text" name="crop_type" [(ngModel)]="addproduct.crop_type" required></td>       
+            </tr>
+             <tr>
+                <td><label for="quantity">Quantity</label> </td>   
+                <td><input  type="number" name="quantity" [(ngModel)]="addproduct.quantity" required></td>       
+            </tr>
+             <tr>
+                <td><label for="quantity">Base_price</label> </td>   
+                <td><input  type="number" name="quantity" [(ngModel)]="addproduct.Base_price" required></td>       
+            </tr>
+             <!-- <tr>
+                <td><label for="quantity">bidder_amount</label> </td>   
+                <td><input  type="number" name="quantity" [(ngModel)]="addproduct.bidder_amount" required></td>       
+            </tr>
+             <tr>
+                <td><label for="quantity">bidder_id</label> </td>   
+                <td><input  type="number" name="quantity" [(ngModel)]="addproduct.bidder_id" required></td>       
+            </tr> -->
+            <tr>
+                <td></td>   
+                <td><input type="submit" value="Save Product" [disabled]="!myForm.valid"></td>       
+            </tr>
+    </table>
+
+</form>

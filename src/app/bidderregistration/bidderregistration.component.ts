@@ -10,6 +10,7 @@ import { BidderService } from '../bidder.service';
 export class BidderregistrationComponent implements OnInit {
 
   bidder:Bidder;
+  location_id:Location;
   constructor(private bidderservice:BidderService) { 
     this.bidder= new Bidder();
   }

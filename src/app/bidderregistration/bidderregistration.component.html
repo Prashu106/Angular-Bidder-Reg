@@ -1,54 +1,50 @@
-<div>
+<div class="container">
     <form #myForm="ngForm" (ngSubmit)="saveData()">
 
-        <table>
+        <table >
                 <tr>
-                    <td><label for="Farmer_id">Farmer_id</label> </td>   
-                    <td><input  type="text" name="Farmer_id" [(ngModel)]="bidder.Farmer_id" required></td>       
+                    <td><label for="bidder_id">bidder_id</label> </td>   
+                    <td><input  type="number" name="bidder_id" [(ngModel)]="bidder.bidder_id" required></td>       
                 </tr>
                 <tr>
-                    <td><label for="Farmer_name">Farmer_name</label> </td>   
-                    <td><input  type="text" name="Farmer_name" [(ngModel)]="bidder.Farmer_name" required></td>       
+                    <td><label for="bidder_name">bidder_name</label> </td>   
+                    <td><input  type="text" name="bidder_name" [(ngModel)]="bidder.bidder_name" required></td>       
                 </tr>
                 <tr>
                     <td><label for="email_id">email_id</label> </td>   
                     <td><input  type="text" name="email_id" [(ngModel)]="bidder.email_id" required></td>       
                 </tr>
                 <tr>
-                    <td><label for="number">number</label> </td>   
-                    <td><input  type="text" name="number" [(ngModel)]="bidder.number" required></td>       
+                    <td><label for="mobile_no">mobile_no</label> </td>   
+                    <td><input  type="text" name="mobile_no" [(ngModel)]="bidder.mobile_no" required></td>       
                 </tr>
                 <tr>
                     <td><label for="account_no">account_no</label> </td>   
                     <td><input  type="text" name="account_no" [(ngModel)]="bidder.account_no" required></td>       
                 </tr>
                 <tr>
-                    <td><label for="IFSC_code">IFSC_code</label> </td>   
-                    <td><input  type="text" name="IFSC_code" [(ngModel)]="bidder.IFSC_code" required></td>       
+                    <td><label for="ifsc_code">IFSC_code</label> </td>   
+                    <td><input  type="text" name="ifsc_code" [(ngModel)]="bidder.ifsc_code" required></td>       
                 </tr>
                 <tr>
-                    <td><label for="Aadhar_no">Aadhar_no</label> </td>   
-                    <td><input  type="text" name="Aadhar_no" [(ngModel)]="bidder.Aadhar_no" required></td>       
+                    <td><label for="aadhar_no">Aadhar_no</label> </td>   
+                    <td><input  type="text" name="aadhar_no" [(ngModel)]="bidder.aadhar_no" required></td>       
                 </tr>
                 <tr>
                     <td><label for="pan_no">pan_no</label> </td>   
                     <td><input  type="text" name="pan_no" [(ngModel)]="bidder.pan_no" required></td>       
                 </tr>
                 <tr>
-                    <td><label for="certificate_no">certificate_no</label> </td>   
-                    <td><input  type="text" name="certificate_no" [(ngModel)]="bidder.certificate_no" required></td>       
+                    <td><label for="license_no">license_no</label> </td>   
+                    <td><input  type="text" name="license_no" [(ngModel)]="bidder.license_no" required></td>       
                 </tr>
                 <tr>
-                    <td><label for="pass">pass</label> </td>   
-                    <td><input  type="text" name="pass" [(ngModel)]="bidder.pass" required></td>       
+                    <td><label for="password">password</label> </td>   
+                    <td><input  type="text" name="password" [(ngModel)]="bidder.password" required></td>       
                 </tr>
                 <tr>
-                    <td><label for="land_id">land_id</label> </td>   
-                    <td><input  type="text" name="land_id" [(ngModel)]="bidder.land_id" required></td>       
-                </tr>
-                <tr>
-                    <td><label for="Location_id">Location_id</label> </td>   
-                    <td><input  type="text" name="Location_id" [(ngModel)]="bidder.Location_id" required></td>       
+                    <td><label for="location_id">Location_id</label> </td>   
+                    <td><input  type="text" name="location_id" [(ngModel)]="bidder.location_id" required></td>       
                 </tr>
                 <tr>
                     <td></td>   

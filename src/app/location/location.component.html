@@ -1,0 +1,34 @@
+<div class="container">
+    <form #myForm="ngForm" (ngSubmit)="saveData()">
+
+        <table >
+                <tr>
+                    <td><label for="location_id">location_id</label> </td>   
+                    <td><input  type="number" name="location_id" [(ngModel)]="location.location_id" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="bidder_id">bidder_id</label> </td>   
+                    <td><input  type="text" name="bidder_name" [(ngModel)]="location.address" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="email_id">email_id</label> </td>   
+                    <td><input  type="text" name="email_id" [(ngModel)]="location.City" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="mobile_no">mobile_no</label> </td>   
+                    <td><input  type="text" name="mobile_no" [(ngModel)]="location.State" required></td>       
+                </tr>
+                <tr>
+                    <td><label for="account_no">account_no</label> </td>   
+                    <td><input  type="number" name="account_no" [(ngModel)]="location.pincode" required></td>       
+                </tr>
+                
+                <tr>
+                    <td></td>   
+                    <td><input type="submit" value="Save Product" [disabled]="!myForm.valid"></td>       
+                </tr>
+        </table>
+
+    </form>
+
+</div>

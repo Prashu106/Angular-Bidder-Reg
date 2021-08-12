@@ -1,14 +1,15 @@
+import { Location } from "./location";
+
 export class Bidder{
-	Farmer_id :number;
-	Farmer_name:String;
-	 email_id :String;
-	number:number;
-	account_no:number;
-	IFSC_code:number; 
-	Aadhar_no:number;
-	pan_no:number;
-	certificate_no:number;
-	pass:number;
-	land_id:number; 
-	Location_id:number
+	bidder_id :number;
+	bidder_name:String;
+	email_id :String;
+	mobile_no:String;
+	account_no:String;
+	ifsc_code:String; 
+	aadhar_no:String;
+	pan_no:String;
+	license_no:String;
+	password:String
+	location_id:Location
 }

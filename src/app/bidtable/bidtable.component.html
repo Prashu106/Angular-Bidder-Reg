@@ -1,0 +1,24 @@
+<table border="1">
+    <thead style="color: blue;">
+        <th>product_id</th>
+        <th> crop_name</th>
+        <th> crop_type</th>
+        <th> quantity</th>
+        <th>Base_price</th>
+        <th>bidder_amount</th>
+        <th>bidder_id</th>
+        <th></th>
+    </thead>
+    <tr *ngFor="let p of addproduct">
+        <td> {{p.product_id}}</td>
+        <td> {{p.crop_name}}</td>
+        <td> {{p.crop_type}}</td>
+        <td> {{p.quantity}}</td>
+        <td> {{p.Base_price}}</td>
+        <td><input type="number" value="p.bidder_amount"  (keyup) ="onchangeData($event,p.product_id)" [ngModel]="p.bidder_amount" placeholder="Enter Bid Amount"></td>
+        <td><input type="number" value="p.bidder_id" [ngModel] ="p.bidder_id" placeholder="Enter Bidder Id"></td>
+        <td><button (click)="saveData(p)">submit</button></td>
+    </tr>
+    <tr>
+    </tr>
+</table>
