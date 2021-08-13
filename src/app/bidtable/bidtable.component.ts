@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Bid } from '../bid';
 import { AddProduct } from '../product';
 import { ProductService } from '../product.service';
 
@@ -37,8 +38,10 @@ export class BidtableComponent implements OnInit {
     let data = $event
     this.productservice.updateProduct(data).subscribe((data: any) => {
       console.log(' Data Updated')
+      console.log(data)
     })
   }
+
 }
 
 
