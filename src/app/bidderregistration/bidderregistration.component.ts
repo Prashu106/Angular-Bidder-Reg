@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Bidder } from 'src/bidder';
+import { Bidder } from '../bidder';
+
 import { BidderService } from '../bidder.service';
 
 @Component({

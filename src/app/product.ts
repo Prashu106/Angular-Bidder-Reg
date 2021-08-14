@@ -6,8 +6,7 @@ export class AddProduct {
     crop_type:string|undefined;
     quantity:number|undefined;
     base_price:number|undefined;
-	bidder_amount:number|undefined;
-	bidder_id:number|undefined;
+	
     
         
   

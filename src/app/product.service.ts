@@ -19,6 +19,6 @@ export class ProductService {
     return this.httpClient.get(this.baseUrl+"/products");
   }
   addBidding(addBid){
-    return this.httpClient.post(this.baseUrl+"/bidder",addBid)
+    return this.httpClient.post(this.baseUrl+"/bidding",addBid)
   }
 }

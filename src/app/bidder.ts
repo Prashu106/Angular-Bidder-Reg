@@ -1,5 +1,3 @@
-import { Location } from "./location";
-
 export class Bidder{
 	bidder_id :number;
 	bidder_name:String;
@@ -11,5 +9,4 @@ export class Bidder{
 	pan_no:String;
 	license_no:String;
 	password:String
-	location_id:Location
 }

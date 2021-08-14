@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Bidder } from 'src/bidder';
+import { Bidder } from './bidder';
 
 @Injectable({
   providedIn: 'root'
