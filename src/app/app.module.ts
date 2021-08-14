@@ -10,19 +10,20 @@ import { BidderregistrationComponent } from './bidderregistration/bidderregistra
 import { ProductComponent } from './product/product.component';
 import { LocationComponent } from './location/location.component';
 import { BidtableComponent } from './bidtable/bidtable.component';
+import { ProductService } from './product.service';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+     AppComponent,
      BidderregistrationComponent,
-     ProductComponent,ProductComponent, LocationComponent, BidtableComponent
+     ProductComponent,LocationComponent,BidtableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,FormsModule,HttpClientModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
