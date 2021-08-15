@@ -1,4 +1,5 @@
 export class Bid{
+    auction_id:number|undefined;
     product_id:number|undefined;
     farmer_id:number|undefined;
     crop_name:string|undefined;

@@ -21,4 +21,7 @@ export class ProductService {
   addBidding(addBid){
     return this.httpClient.post(this.baseUrl+"/bidding",addBid)
   }
+  getauctiontable(){
+    return this.httpClient.get(this.baseUrl+"/bidding");
+  }
 }

@@ -1,0 +1,31 @@
+<h1>Bidding Table</h1>
+<table border="1" class="sortable" class="searchable sortable">
+    <thead style="color: blue;">
+        <th>auction_id</th>
+        <th>product_id</th>
+        <th>bidder_id</th>
+        <th>farmer_id</th>
+        <th>crop_name</th>
+        <th>crop_type</th>
+        <th>quantity</th>
+        <th>Base_price</th>
+        <th >bidder_amount</th>
+    </thead>
+    <tr *ngFor="let p of bid">
+        <td> {{p.auction_id}}</td>
+        <td> {{p.product_id}}</td>
+        <td> {{p.bidder_id}}</td>
+        <td> {{p.farmer_id}}</td>
+        <td> {{p.crop_name}}</td>
+        <td> {{p.crop_type}}</td>
+        <td> {{p.quantity}}</td>
+        <td> {{p.base_price}}</td>
+        <td> {{p.bidder_amount}}</td>
+        
+        <!-- <td><button >submit</button></td> -->
+        </tr>
+</table>
+
+<!-- value="p.bidder_amount" -->
+<!-- value="p.bidder_id" -->
+    

@@ -9,6 +9,7 @@ import { ProductComponent } from './product/product.component';
 import { BidtableComponent } from './bidtable/bidtable.component';
 import { ProductService } from './product.service';
 import { BidderService } from './bidder.service';
+import { AuctiontableComponent } from './auctiontable/auctiontable.component';
 
 
 
@@ -16,7 +17,7 @@ import { BidderService } from './bidder.service';
   declarations: [
      AppComponent,
      BidderregistrationComponent,
-     ProductComponent,BidtableComponent
+     ProductComponent,BidtableComponent, AuctiontableComponent
   ],
   imports: [
     BrowserModule,
