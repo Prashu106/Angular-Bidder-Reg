@@ -24,4 +24,10 @@ export class ProductService {
   getauctiontable(){
     return this.httpClient.get(this.baseUrl+"/bidding");
   }
+  getmarkettable(){
+    return this.httpClient.get(this.baseUrl+"/market");
+  }
+  addMarket(market){
+    return this.httpClient.post(this.baseUrl+"/market", market);
+  }
 }

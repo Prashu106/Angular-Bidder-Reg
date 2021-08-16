@@ -10,6 +10,7 @@ import { BidtableComponent } from './bidtable/bidtable.component';
 import { ProductService } from './product.service';
 import { BidderService } from './bidder.service';
 import { AuctiontableComponent } from './auctiontable/auctiontable.component';
+import { MarketPlaceComponent } from './market-place/market-place.component';
 
 
 
@@ -17,7 +18,7 @@ import { AuctiontableComponent } from './auctiontable/auctiontable.component';
   declarations: [
      AppComponent,
      BidderregistrationComponent,
-     ProductComponent,BidtableComponent, AuctiontableComponent
+     ProductComponent,BidtableComponent, AuctiontableComponent, MarketPlaceComponent
   ],
   imports: [
     BrowserModule,

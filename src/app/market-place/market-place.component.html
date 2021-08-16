@@ -1,4 +1,4 @@
-<h1>Auction Table</h1>
+<h1>Market Place</h1>
 <table border="1" class="sortable" class="searchable sortable">
     <thead style="color: blue;">
         <th>auction_id</th>
@@ -10,9 +10,9 @@
         <th>quantity</th>
         <th>Base_price</th>
         <th >bidder_amount</th>
-        <th colspan="2">Status</th>
+        <th >Status</th>
     </thead>
-    <tr *ngFor="let p of bid">
+    <tr *ngFor="let p of market">
         <td> {{p.auction_id}}</td>
         <td> {{p.product_id}}</td>
         <td> {{p.bidder_id}}</td>
@@ -22,11 +22,10 @@
         <td> {{p.quantity}}</td>
         <td> {{p.base_price}}</td>
         <td> {{p.bidder_amount}}</td>
-        <td><button (click)="Approve(p)">Approve</button></td>
-        <td><button (click)="Reject(p)">Reject</button></td>
-        <!-- <td><button >Approve</button></td> -->
-        <!-- <td><button ></button></td> -->
-        </tr>
+        <td> {{p.status}}</td>
+       
+        <!-- <td><button (click)="Reject(p)">Reject</button></td> -->
+    </tr>
 </table>
 
 <!-- value="p.bidder_amount" -->

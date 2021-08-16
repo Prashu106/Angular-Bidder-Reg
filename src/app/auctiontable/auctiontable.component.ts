@@ -9,6 +9,7 @@ import { ProductService } from '../product.service';
 export class AuctiontableComponent implements OnInit {
 
   bid:any
+  market:any;
   constructor(private productservice: ProductService) { }
 
   ngOnInit(): void {
@@ -17,5 +18,21 @@ export class AuctiontableComponent implements OnInit {
       console.log(this.bid);
     })
   }
-
+  Approve(market:any)
+  {
+      market.status="Sold"
+      // this.productservice.addMarket().subscribe;
+      this.productservice.addMarket(market).subscribe((data)=>
+      {
+          alert("Product Sold")
+      })
+  }
+  Reject(market:any)
+  {
+    market.status="Rejected";
+      this.productservice.addMarket(market).subscribe((data)=>
+      {
+          alert("Bid Not Approved")
+      })
+  }
 }
